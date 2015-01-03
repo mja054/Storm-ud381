@@ -2,6 +2,8 @@ from flask import Flask, render_template, Response
 
 import redis
 
+print "name = %s" %(__name__)
+
 app = Flask(__name__)
 r = redis.StrictRedis(host='127.0.0.1', port=6379, db=0)
 
